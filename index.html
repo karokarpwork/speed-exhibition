@@ -131,7 +131,28 @@
  .room-light{mask-image:linear-gradient(transparent,#000 17%,#000 82%,transparent);-webkit-mask-image:linear-gradient(transparent,#000 17%,#000 82%,transparent)}
  .room-light::before{bottom:8%;height:75%;width:82%;left:9%;max-height:460px}
 }
-picture{display:contents}</style></head><body><header><a href="#start"><strong>СКОРОСТЬ.</strong></a><nav><a href="#manifest">Идея</a><a href="#routes">Маршруты</a><a href="#background">Механики</a><a href="#promo">Промо</a><a href="#project-case">Проект</a><button id="sound" aria-pressed="false">Звук выкл.</button></nav></header>
+picture{display:contents}
+@media(max-width:760px){
+ #routes{padding-bottom:12px}
+ #mapPreview{display:none}
+ .zone,.zone:nth-child(even),#secret-repertoire,.editorial,#promo,#end{
+   margin:12px 4vw 32px;padding:14px;min-height:0;box-sizing:border-box;
+   background-color:#0b0908;border:0;border-bottom:1px solid #65361f;
+ }
+ .zone,.zone:nth-child(even){grid-template-columns:minmax(0,1fr);gap:18px;align-items:start}
+ .zone .art,.zone:nth-child(even) .art{order:0;margin:0;width:100%;height:auto;min-height:0}
+ .zone .zcopy{order:1;max-width:100%;min-width:0;padding:0}
+ .zone .index,.editorial .index,#promo .index,#end .index{color:#e77646;font-size:10px;letter-spacing:.14em}
+ .zone .zcopy h2,.editorial h2,#promo h2,#end h2,.city-photos figcaption h3{
+   margin:9px 0;font-size:clamp(28px,7.2vw,40px);line-height:1.06;letter-spacing:-.045em;font-weight:400;text-transform:none;overflow-wrap:break-word}
+ .zone .zcopy p,.editorial p,#promo p,#end p,.city-photos p{font-size:16px;line-height:1.48;margin:8px 0;color:#bdb7b2;max-width:100%}
+ .zone .zcopy .lead{color:#eee9e3;font-size:18px}
+ .zone .back{margin-top:12px;padding:9px 0;font-size:15px;letter-spacing:0}
+ .secret-layout,.story-grid,.city-photos{grid-template-columns:minmax(0,1fr);gap:18px}
+ .city-photos figure{margin:0}
+ .story-grid h3{font-size:22px;line-height:1.14}
+}
+</style></head><body><header><a href="#start"><strong>СКОРОСТЬ.</strong></a><nav><a href="#manifest">Идея</a><a href="#routes">Маршруты</a><a href="#background">Механики</a><a href="#promo">Промо</a><a href="#project-case">Проект</a><button id="sound" aria-pressed="false">Звук выкл.</button></nav></header>
 <section id="start" class="entry scene" data-bpm="60"><span class="index">У каждого своя скорость / концепция выставки</span><div class="timer" id="timer">00:00:00</div><p>ЭТО ВРЕМЯ УЖЕ ТВОЁ.</p><button class="start" id="startBtn">НАЧАТЬ &nbsp; ↓</button><div class="footline"><span>ПРОСТРАНСТВО ВРЕМЕНИ</span><span>01 — 10</span></div></section>
 <section id="metro" class="metro scene" data-bpm="60"><div class="light"></div><div class="grain"></div><div class="metro-title">60 BPM</div><svg class="metronome-svg" viewBox="0 0 400 640" aria-label="Качающийся метроном"><defs><linearGradient id="body"><stop stop-color="#080808"/><stop offset=".45" stop-color="#2c211a"/><stop offset=".7" stop-color="#080808"/><stop offset="1" stop-color="#4d2512"/></linearGradient><linearGradient id="edge"><stop stop-color="#0a0a0a"/><stop offset=".65" stop-color="#79533b"/><stop offset="1" stop-color="#ff9e53"/></linearGradient></defs><path d="M199 38L355 560H45Z" fill="url(#body)" stroke="url(#edge)" stroke-width="3"/><path d="M199 38L240 54 384 560H355Z" fill="#2b1008" stroke="#9d4a21" stroke-width="1"/><path d="M199 111L308 529H91Z" fill="#080808" stroke="#57351e" stroke-width="2"/><path d="M200 120V500" stroke="#8d7968" stroke-width="2"/><path d="M181 160H219" stroke="#c5aa8d" opacity=".65"/><path d="M190 183H210" stroke="#c5aa8d" opacity=".65"/><path d="M181 206H219" stroke="#c5aa8d" opacity=".65"/><path d="M190 229H210" stroke="#c5aa8d" opacity=".65"/><path d="M181 252H219" stroke="#c5aa8d" opacity=".65"/><path d="M190 275H210" stroke="#c5aa8d" opacity=".65"/><path d="M181 298H219" stroke="#c5aa8d" opacity=".65"/><path d="M190 321H210" stroke="#c5aa8d" opacity=".65"/><path d="M181 344H219" stroke="#c5aa8d" opacity=".65"/><path d="M190 367H210" stroke="#c5aa8d" opacity=".65"/><path d="M181 390H219" stroke="#c5aa8d" opacity=".65"/><path d="M190 413H210" stroke="#c5aa8d" opacity=".65"/><path d="M181 436H219" stroke="#c5aa8d" opacity=".65"/><path d="M190 459H210" stroke="#c5aa8d" opacity=".65"/><g id="arm"><path d="M200 503V104" stroke="#eee0d0" stroke-width="5"/><path d="M189 228H211V266H189Z" fill="#b59e88" stroke="#fae8cc"/><circle cx="200" cy="503" r="12" fill="#aa896e"/></g><path d="M31 560H367V583H31Z" fill="#14100d" stroke="#936046" stroke-width="2"/></svg><div class="metro-caption"><span class="index">00 / Встречающий арт-объект</span><h2>Ты не обязан<br>попадать в такт.</h2><p>Метроном задаёт внешний ритм. Выставка показывает, что жизнь не обязана ему соответствовать.</p></div><div class="metro-right"><span id="bpm">60 BPM</span><br>ОДИН УДАР. ОДНА СЕКУНДА.</div></section>
 <section id="manifest" class="manifest scene" data-bpm="60"><span class="index">Манифест</span><h1>У КАЖДОГО<br><em>СВОЯ СКОРОСТЬ</em></h1><p>Ты можешь ускорить события или задержаться и увидеть то, мимо чего прошёл бы в спешке.<br><strong>Нет правильной скорости. Есть твоя.</strong></p></section>
@@ -197,12 +218,12 @@ const exhibitData={
 '09':{title:'Предел',kicker:'09 / Скорость',text:'Настоящая электрическая трасса и карт: разгон, поворот и усилие тела вместо симулятора.',icon:`<svg viewBox="0 0 128 100" role="img" aria-label="Электрический карт на трассе"><path d="M8 72q21-39 54-39 25 0 50 18M10 82q19-22 42-22 29 0 62 12" fill="none" stroke="#884523" stroke-width="4"/><path d="m22 64 15 5m56-27 14 9" stroke="#ff7a32" stroke-width="3"/><path d="M32 56h48l13 12-14 9H35l-9-8z" fill="#a73312" stroke="#f49558" stroke-width="2"/><path d="M44 55 54 43h22l9 13" fill="#271a13" stroke="#d68b59" stroke-width="2"/><path d="M56 46h16l5 8H51z" fill="#111" stroke="#c57945"/><circle cx="39" cy="77" r="8" fill="#090909" stroke="#9e9e9e" stroke-width="3"/><circle cx="80" cy="77" r="8" fill="#090909" stroke="#9e9e9e" stroke-width="3"/><path d="M42 68h37" stroke="#ffc08b" stroke-width="2"/></svg>`},
 '10':{title:'Временное место жительства',kicker:'10 / Чужие жизни',text:'Одна квартира, пять историй и одни актёры: пока ты отсутствуешь, для героев проходит жизнь.',icon:`<svg viewBox="0 0 128 100" role="img" aria-label="Комната с диваном и окнами разного времени"><path d="M12 83V22h104v61" fill="#120e0b" stroke="#925c38" stroke-width="3"/><rect x="23" y="31" width="28" height="25" fill="#25170f" stroke="#d48a58" stroke-width="2"/><path d="M25 52q12-20 24-2" fill="none" stroke="#ff9b48" stroke-width="3"/><rect x="58" y="31" width="45" height="28" fill="#0b0b0b" stroke="#826043" stroke-width="2"/><path d="M64 51h34" stroke="#e38d4c" stroke-width="3"/><path d="M23 67q0-8 9-8h64q9 0 9 8v12H23z" fill="#473026" stroke="#d09b75" stroke-width="2"/><path d="M29 70h24v9H29m31-9h38v9H60" fill="#291a13" stroke="#8c6043"/><path d="M30 81v7m69-7v7" stroke="#c08a61" stroke-width="3"/><circle cx="110" cy="20" r="5" fill="#ff7a32"/><path d="M110 7v5m0 16v5m-13-13h5m16 0h5" stroke="#ff9a55" stroke-width="1.5"/></svg>`}
 };
-const map=document.querySelector('#map'), preview=document.querySelector('#mapPreview');function showExhibit(node){const d=exhibitData[node.textContent.trim().slice(0,2)];if(!d)return;
+const map=document.querySelector('#map'), preview=document.querySelector('#mapPreview');function showExhibit(node){if(innerWidth<=760)return;const d=exhibitData[node.textContent.trim().slice(0,2)];if(!d)return;
 const actions=['Повернуть колесо времени','Сверить часы','Пройти сквозь вязкое время','Увидеть ледяной цветок','Открыть дверь','Войти в пультовую','Узнать свой финал','Подождать на остановке','Ускориться','Зайти в квартиру'];
 const action=document.getElementById('previewAction');
 action.href=node.hash;
 action.textContent=actions[Number(node.hash.slice(2))-1]+' →';
-preview.classList.add('active');document.querySelector('#previewArt').src=(matchMedia('(max-width:760px)').matches?document.querySelector(node.hash+' .art source').srcset:document.querySelector(node.hash+' .art img').src);document.querySelector('#previewArt').alt=d.title;document.querySelector('#previewKicker').textContent=d.kicker;document.querySelector('#previewTitle').textContent=d.title;document.querySelector('#previewText').textContent=d.text;document.querySelectorAll('.node').forEach(n=>n.classList.toggle('is-preview',n===node));map.classList.add('previewing');map.querySelectorAll('svg path').forEach(path=>{path.classList.toggle('related',(path.dataset.points||'').split(' ').includes(node.textContent.trim().slice(0,2)))});document.querySelectorAll('.art-object').forEach(el=>el.innerHTML='');}
+preview.classList.add('active');document.querySelector('#previewArt').src=(matchMedia('(max-width:760px)').matches?document.querySelector(node.hash+' .art source').srcset:document.querySelector(node.hash+' .art img').src);document.querySelector('#previewArt').alt=d.title;document.querySelector('#previewKicker').textContent=d.kicker;document.querySelector('#previewTitle').textContent=d.title;document.querySelector('#previewText').textContent=Array.from(document.querySelectorAll(node.hash+' .zcopy p'),p=>p.textContent).join(' ');document.querySelectorAll('.node').forEach(n=>n.classList.toggle('is-preview',n===node));map.classList.add('previewing');map.querySelectorAll('svg path').forEach(path=>{path.classList.toggle('related',(path.dataset.points||'').split(' ').includes(node.textContent.trim().slice(0,2)))});document.querySelectorAll('.art-object').forEach(el=>el.innerHTML='');}
 function clearExhibit(node){if(matchMedia('(max-width:760px),(pointer:coarse)').matches)return;if(node.matches(':focus'))return;preview.classList.remove('active');map.classList.remove('previewing');map.querySelectorAll('svg path').forEach(path=>path.classList.remove('related'));document.querySelectorAll('.node').forEach(n=>n.classList.remove('is-preview'))}
 document.querySelectorAll('.node').forEach(node=>{node.addEventListener('pointerenter',()=>showExhibit(node));node.addEventListener('pointerleave',()=>clearExhibit(node));node.addEventListener('focus',()=>showExhibit(node));node.addEventListener('blur',()=>clearExhibit(node))});
 
@@ -313,7 +334,7 @@ document.querySelectorAll('.node').forEach(node=>{node.addEventListener('pointer
  const nodes=[...document.querySelectorAll('#map .node')];
  for(const node of nodes){
    node.addEventListener('click',event=>{
-     if(!compact.matches)return;
+     if(!compact.matches||innerWidth<=760)return;
      event.preventDefault();
      showExhibit(node);
      document.getElementById('mapPreview').scrollIntoView({block:'nearest',behavior:'instant'});
